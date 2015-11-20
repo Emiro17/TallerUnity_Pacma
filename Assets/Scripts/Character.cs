@@ -6,6 +6,8 @@ public class Character : MonoBehaviour {
 	public float speed;
 	private Rigidbody rb;
 
+	public GameSettings settings;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();	

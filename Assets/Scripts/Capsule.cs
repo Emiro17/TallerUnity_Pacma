@@ -1,20 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Capsule : MonoBehaviour {
 
+	public Action touched;
+
+
 	void OnTriggerEnter(Collider other){
 		gameObject.SetActive(false);
-		Debug.Log ("Chocapic");
-	}
 
-	// Use this for initialization
-	void Start () {
-	
+		if (touched != null)
+			touched ();
+
 	}
-	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
