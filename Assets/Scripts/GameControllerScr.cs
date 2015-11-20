@@ -35,11 +35,8 @@ public class GameControllerScr : MonoBehaviour {
 
 	void HandleSuperCookieTouched(){
 		score.SuperCookieTouched();
+
 	}
 	 
-	// Update is called once per frame
-	void Update () {
 
-
-	}
 }
